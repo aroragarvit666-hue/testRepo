@@ -1,0 +1,55 @@
+/*
+* <license header>
+*/
+
+
+html,
+body {
+  margin: 0;
+}
+
+/** Custom Sidebar Styling **/
+.SideNav {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0px;
+  padding: 0;
+  outline: none;
+  height: 100%;
+}
+
+.SideNav-item {
+  list-style-type: none;
+  margin: var(--spectrum-global-dimension-size-50) 0;
+}
+
+.SideNav-itemLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: var(--spectrum-alias-single-line-height, var(--spectrum-global-dimension-size-400));
+  padding: var(--spectrum-global-dimension-size-65) var(--spectrum-global-dimension-size-150);
+  border-radius: var(--spectrum-alias-border-radius-regular, var(--spectrum-global-dimension-size-50));
+  font-size: var(--spectrum-alias-font-size-default, var(--spectrum-global-dimension-font-size-100));
+  font-weight: var(--spectrum-global-font-weight-regular, 400);
+  font-style: normal;
+  text-decoration: none;
+  word-break: break-word;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.SideNav-itemLink:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.SideNav-itemLink.is-selected {
+  color: #ffffff;
+  font-weight: var(--spectrum-global-font-weight-bold, 700);
+  background-color: rgba(255, 255, 255, 0.25);
+}
