@@ -1,0 +1,31 @@
+operations:
+  view:
+    - type: web
+      impl: index.html
+actions: actions
+web: web-src
+runtimeManifest:
+  packages:
+    dx-excshell-1:
+      license: Apache-2.0
+      actions:
+        generic:
+          function: actions/generic/index.js
+          web: 'yes'
+          runtime: nodejs:22
+          inputs:
+            LOG_LEVEL: debug
+          annotations:
+            require-adobe-auth: true
+            final: true
+        analytics:
+          function: actions/analytics/index.js
+          web: 'yes'
+          runtime: nodejs:22
+          inputs:
+            LOG_LEVEL: debug
+            apiKey: $SERVICE_API_KEY
+          annotations:
+            require-adobe-auth: true
+            final: true
+            include-ims-credentials: true
