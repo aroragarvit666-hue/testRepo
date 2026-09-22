@@ -8,6 +8,7 @@
  * Two modes in one action:
  *  - No `rsid` param  -> returns the list of available report suites (for a Picker)
  *  - With `rsid` + `startDate` + `endDate` -> runs a daily report and returns rows
+ * Dummy comment. 
  */
 
 const fetch = require('node-fetch')
